@@ -8,13 +8,13 @@ print("Ingrese las materias y sus notas (escriba 'salir' para terminar)")
 #crea un bucle que pide ingresar materias y notas
 while True:
 # Pedir al usuario el nombre de la materia
-    materia = input("Nombre de la materia: ")
+    materia = input("Nombre de la materia📋: ")
 #transcribe el texto a minuscula para evitar errores de escritura
     if materia.lower() == "salir":
         break
 
 # Pedir la nota para esa materia
-    nota = input("Nota (entre 0 y 10): ")
+    nota = input("Nota📊 (entre 0 y 10): ")
 
     try:
         # Intentar convertir la nota a número decimal
