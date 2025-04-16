@@ -39,5 +39,7 @@ if notas:
  # Calcular el promedio de notas
     promedio = sum(notas) / len(notas)
     print(f"📊 Promedio de notas: {promedio:.1f}")
-    print ("✅ el estudiante aprobo")
-    print("❌el estudiante desaprobo")
+    if promedio >= 7:
+        print ("✅ el estudiante aprobo")
+    else:
+        print ("❌ el estudiante desaprobo")
