@@ -19,25 +19,24 @@ while True:
     try:
         # Intentar convertir la nota a número decimal
         nota = float(nota)
-
-        # Verificar que esté en el rango válido (0 a 10)
+# verifica si la nota esta entre 0 y 10
         if 0 <= nota <= 10:
-            # Si es válida, se guardan la materia y la nota en sus listas respectivas
             materias.append(materia)
             notas.append(nota)
         else:
-            # Si la nota no está en el rango, se muestra un mensaje de error
+#si no esta dentro de 0 y 10 muestra un mensaje de error
             print("❌ La nota debe estar entre 0 y 10.")
     except:
-        # Si la conversión falla (por ejemplo, si el usuario escribe letras), mostrar error
+ # Si la conversión falla (por ejemplo, si el usuario escribe letras), mostrar error
         print("❌ Entrada no válida. Ingrese un número.")
 
-# Mostrar los resultados solo si hay notas registradas
+# Mostrar los resultados
 if notas:
     print("\n📋 Materias y notas:")
     for i in range(len(materias)):
         print(f"{materias[i]}: {notas[i]}")
-    # Calcular el promedio de notas
+
+ # Calcular el promedio de notas
     promedio = sum(notas) / len(notas)
     print(f"📊 Promedio de notas: {promedio:.1f}")
     print ("✅ el estudiante aprobo")
